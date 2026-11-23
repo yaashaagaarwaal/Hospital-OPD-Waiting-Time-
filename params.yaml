@@ -6,3 +6,4 @@ data:
 target: wait_min
 typo_threshold: 300
 sentinel: -1
+leak_column: token_called_after_min
