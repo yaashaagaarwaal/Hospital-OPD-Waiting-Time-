@@ -1,0 +1,58 @@
+# MP069 findings
+
+group_id: "G005"
+problem_id: "MP069"
+
+data_issues:
+  leaking_column:
+    present: true
+    column: token_called_after_min
+  unit_mixup:
+    present: false
+    column: null
+    group_value: null
+    factor: null
+  sentinel_value:
+    present: true
+    column: lab_tests_pending
+    value: -1
+    count: 41
+  duplicate_rows:
+    present: false
+    count: null
+  stuck_sensor:
+    present: false
+    column: null
+    start_date: null
+    end_date: null
+  target_typos:
+    present: true
+    count: 14
+  spelling_variants:
+    present: true
+    column: department
+    true_levels: 3
+
+tracking:
+  experiment_name: null
+  best_run_id: null
+  registered_model_name: null
+  champion_version: null
+
+monitoring:
+  psi:
+    patients_ahead: null
+    doctors_on_duty: null
+    arrival_hour: null
+    avg_consult_min: null
+    lab_tests_pending: null
+    distance_km: null
+  most_drifted_feature: null
+  mae_by_group:
+    'Old Wing': null
+    'New Wing': null
+    'Annexe': null
+  worst_served_group: null
+  mae_v1_on_check: null
+  mae_v2_on_check: null
+  decision: null
